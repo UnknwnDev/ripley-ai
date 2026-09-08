@@ -44,7 +44,6 @@ class Ripley:
 
 
 if __name__ == "__main__":
-    # Initialize engines
     TTS.initialize()
     stt = STT()
     agent = Ripley()
@@ -63,6 +62,5 @@ if __name__ == "__main__":
             running = False
             break
 
-        # Process the voice command and reply
         response = agent.speak(msg)
         print(f"Ripley: {response}")
